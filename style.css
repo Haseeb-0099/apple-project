@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  background-size: cover;
+}
+/* ******************* */
+/* Helper  class */
+/* ******************* */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/* mobile */
+.container {
+  /* 1140px */
+  max-width: 10.24rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  /* color: #45260a; */
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* ******************* */
+/* Hero Section  */
+/* ******************* */
+.section-hero {
+  background-image: url(/img/hero_apple_watch_series_9_order__d0fi9mb84dci_large.jpg);
+
+  /* width: 100%; */
+  background-position: center;
+  background-size: cover;
+  padding: 0 0 9.6rem 0;
+  z-index: -1;
+  margin-bottom: 2rem;
+}
+.hero {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-20%);
+}
+.main-heading {
+  font-size: 1.7rem;
+}
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.hero-text p {
+  color: #fff;
+  align-self: center;
+  margin-top: 1.2rem;
+  font-weight: 400;
+}
+.hero-heading {
+  text-align: center;
+}
+.helper-heading {
+  padding-top: 5rem;
+}
+.hero-link {
+  display: flex;
+  gap: 3.5rem;
+  font-size: 2rem;
+}
+.hero-link a {
+  text-decoration: none;
+  color: #2997ff;
+  margin-top: -1.5rem;
+}
+
+.icon {
+  text-align: center;
+  transform: translateY(0.5rem);
+}
+.hero-link a:hover,
+.hero-link a:active {
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+/* ******************* */
+/* section 2 */
+/* ******************* */
+.section-hero-2 {
+  background-image: url(/img/hero_iphone15pro__i70z9oz3hj2i_large.jpg);
+
+  /* width: 100%; */
+  background-position: center;
+  background-size: cover;
+  padding: 4.8rem 0 9.6rem 0;
+  z-index: -1;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+.headline {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.005rem;
+}
+/* ******************* */
+/* section 3 */
+/* ******************* */
+.section-hero-3 {
+  background-image: url(/img/hero_iphone15_announce__uuemlcwczn6u_large.jpg);
+
+  /* width: 100%; */
+  background-position: center;
+  background-size: cover;
+  padding: 4.8rem 0 9.6rem 0;
+  z-index: -1;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+.headline-3 {
+  font-size: 5.6rem;
+  color: #1d1d1f;
+  font-weight: 600;
+  letter-spacing: -0.005rem;
+}
+.hero-text-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #1d1d1f;
+}
+.heading-tertiary-3 {
+  font-size: 2.8rem;
+  line-height: 1.10722;
+  font-weight: 400;
+  letter-spacing: 0.004rem;
+  margin: 0.5rem 0 3rem;
+}
+/* ******************* */
+/* section grid */
+/* ******************* */
+.section-grid {
+  padding: 0;
+}
+.grid-section {
+  padding: 1.6rem;
+  gap: 1.5rem;
+  margin-top: -2rem;
+}
+.headline-4 {
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #1d1d1f;
+  font-weight: 600;
+  margin-top: 5.3rem;
+}
+.heading-tertiary-4 {
+  font-size: 2.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.016rem;
+  width: 50%;
+}
+.hero-grid {
+  background-image: url(/img/holiday_2023_promo__dirvdl6a3r2a_large.jpg);
+  background-position: center;
+  height: 57 rem;
+}
+.card-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-link {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.grid-link a {
+  text-decoration: none;
+  color: #2997ff;
+  transition: all 0.3s;
+}
+.grid-link a:hover,
+.grid-link a:active {
+  text-decoration: underline;
+}
+/* ******************* */
+/* card 2 */
+/* ******************* */
+.heading-tertiary-5 {
+  font-size: 2.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.016rem;
+}
+.hero-grid-2 {
+  background-image: url(/img/promo_mbp__ek7p477bkp6q_large.jpg);
+  background-position: center;
+  height: 57rem;
+}
+.icon-2 {
+  transform: translateY(20%);
+  align-self: center;
+}
+.gird-link-2 {
+  display: flex;
+  justify-content: center;
+
+  gap: 2rem;
+}
+/* ******************* */
+/* card 3 */
+/* ******************* */
+.hero-grid-3 {
+  background-image: url(/img/promo_apple_watch_ultra2_order__dyxqj5ia98om_large.jpg);
+  background-position: center;
+  height: 57rem;
+}
+.heading-tertiary-6 {
+  font-size: 2.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.016rem;
+  margin-bottom: 1rem;
+}
+span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f76707;
+  text-align: center;
+  margin: 1rem;
+}
+.upper {
+  text-transform: uppercase;
+}
+/* ******************* */
+/* card 4 */
+/* ******************* */
+.hero-grid-4 {
+  background-image: url(/img/promo_airpods_pro_order__d8xv36p4uwae_large.jpg);
+  background-position: center;
+  height: 57rem;
+}
+.headline-5 {
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 5.3rem;
+}
+.heading-tertiary-7 {
+  font-size: 2.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.016rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* ******************* */
+/* card 5 */
+/* ******************* */
+.hero-grid-5 {
+  background-image: url(/img/tile__cauwwcyyn9hy_large.jpg);
+  background-position: center;
+  height: 57rem;
+}
+.heading-tertiary-8 {
+  font-size: 2.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.016rem;
+  width: 60%;
+  text-align: center;
+}
+.helper {
+  margin-top: 1rem;
+}
+/* ******************* */
+/* card 5 */
+/* ******************* */
+.heading-tertiary-9 {
+  font-size: 2.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.016rem;
+  width: 52.5%;
+  text-align: center;
+}
+.hero-grid-6 {
+  background-image: url(/img/promo_iphone_tradein__bugw15ka691e_large.jpg);
+  background-position: center;
+  height: 57rem;
+}
+/* ******************* */
+/* deascription */
+/* ******************* */
+.description {
+  background-color: #f5f5f7;
+  width: 100%;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.text-container {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  box-sizing: content-box;
+  color: #86868b;
+  padding: 0 15rem;
+  line-height: 1.2;
+}
+.text-container p:first-child {
+  padding: 1.7rem 0 1.1rem;
+}
+.text-container p:nth-child(2) {
+  padding: 0 0 0.96rem;
+}
+.text-container p:nth-child(3) {
+  padding: 0 0 0.96rem;
+}
+.text-container p:nth-child(4) {
+  padding: 0 0 0.96rem;
+}
+.text-container p:nth-child(5) {
+  padding: 0 0 1.92rem;
+}
+.text-container a:link,
+.text-container a:visited {
+  color: #6e6e73;
+}
+/* ******************* */
+/* Footer*/
+/* ******************* */
+footer {
+  background-color: #f5f5f7;
+  width: 100%;
+  padding: 0 18.2rem;
+  margin: 0 auto;
+}
+.footer {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: normal;
+
+  color: #6e6e73;
+  padding: 0;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1.5px solid #bebebe;
+}
+.footer div {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.footer div ul {
+  margin-bottom: 2.6rem;
+}
+.footer div li {
+  list-style: none;
+  margin-bottom: 0.96rem;
+  letter-spacing: 0.01rem;
+  cursor: pointer;
+}
+.footer div li:hover {
+  text-decoration: underline;
+}
+.footer div p {
+  font-weight: 600;
+  color: #4d4d4f;
+  margin-bottom: 0.96rem;
+  letter-spacing: 0.01rem;
+}
+.footer-additional {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: normal;
+
+  color: #86868b;
+  padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid #bebebe;
+}
+.footer-additional a:link,
+.footer-additional a:visited {
+  color: #2997ff;
+}
+.end {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: normal;
+
+  color: #86868b;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.end a:link,
+.end a:visited {
+  text-decoration: none;
+  color: #6e6e73;
+  text-align: center;
+}
+.end p {
+  margin-right: auto;
+}
+.end a:last-child {
+  margin-left: auto;
+}
+.end a:nth-child(2),
+.end a:nth-child(3),
+.end a:nth-child(a) {
+  margin-right: auto;
+  margin-left: -10rem;
+}
+/* ******************* */
+/* deascription */
+/* ******************* */
+.navbar {
+  background-color: rgba(22, 22, 23, 0.9);
+  width: 100%;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: normal;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.nav-icon {
+  font-size: 1.7rem;
+}
